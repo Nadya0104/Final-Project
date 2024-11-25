@@ -1,0 +1,381 @@
+/*
+    CSS file
+    Submitted by:
+    Ambartzumov Nadezda 207267113
+    Ohana Ron 206815557
+*/
+
+
+/* Style for navigation bar */
+.navbar {
+    display: flex; 
+    background-color: lightblue;  
+    margin: 0; 
+    padding: 5px 25px; 
+    align-items: center; 
+    justify-content: space-between; 
+}
+
+/* Style for left items in the navbar */
+.navbar_left {
+    display: flex;
+    align-items: center;
+    gap: 30px; /* Sets a gap between the items */
+}
+
+/* Style for logo in the navbar */
+.navbar_left img {
+    height: 60px;
+    width: 60px;
+}
+
+/* Style for homepage link in the navbar */
+.homeLink {
+    text-decoration: none; /* Removes underline from the link text */
+    font-size: 1.8rem; 
+    color: white; 
+    font-family: 'MV Boli'; 
+}
+
+/* Style for shopping cart icon in the navbar */
+.shoppingCart {
+    width: 30px;
+    height: 30px;
+    background-image: url('./images/shopping_cart.png'); /* Sets the background image for the shopping cart button */
+    background-size: cover; /* Ensures the image covers the entire area */
+    border: none; 
+    cursor: pointer; /* Changes the cursor to a pointer when hovering over the button */
+    float: right; /* Aligns the button to the right */
+}
+
+/* Style for cart quantity icon in the navbar */
+.cart-quantity {
+    position: absolute;
+    top: 30px;
+    right: 60px;
+    background-color: red;
+    color: white;
+    border-radius: 5px;
+    padding: 2px 6px;
+    font-size: 10px;
+    line-height: 10px;
+    font-weight: bold;
+}
+
+/* Style for cart total price icon in the navbar */
+.cart-total {
+    position: absolute;
+    top: 45px;
+    right: 60px;
+    background-color: red;
+    color: white;
+    border-radius: 5px;
+    padding: 2px 6px;
+    font-size: 10px;
+    line-height: 10px;
+}
+
+/* Style for cart dropdown */
+.cart-dropdown {
+    position: absolute; /* Positions the dropdown relative to the navbar */
+    top: 9%; /* Positions the dropdown 9% from the top of its container */
+    right: 0; /* Aligns the dropdown to the right side */
+    width: 100%; /* Sets the dropdown width to 100% of its container */
+    max-width: 450px; /* Sets a maximum width for the dropdown */
+    max-height: 400px; /* Sets a maximum height for the dropdown */
+    background-color: white;
+    border: 1px solid lightgray; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    padding: 10px;
+    z-index: 1000; /* Ensures the dropdown appears above other elements */
+    overflow-y: auto; /* Adds vertical scrolling if the content exceeds the height */
+}
+
+/* Style for cart list */
+.ul-style {
+    text-align: center; 
+    list-style-type: none; /* Removes bullet points from the list */
+    padding: 0; 
+}
+
+/* Style for each element in the list */
+.list-style {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px; 
+}
+
+/* Style for element's image */
+.list-style img {
+    height: 57px;
+    width: 50px;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Style for element's quantity */
+.list-style div {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+/* Style for counter buttons */
+.counter {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Style for each counter button */
+.counter button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10px;
+    width: 20px;
+    cursor: pointer;
+    border: 1px solid gray;
+    border-radius: 2px;
+}
+.counter button:hover {
+    background-color: lightgray; /* Changes the background color on hover */
+}
+
+/* Style for 'remove' button from the list */
+.list-style button {
+    cursor: pointer;
+    border: 1px solid gray;
+    border-radius: 2px;
+}
+
+.list-style button:hover {
+    background-color: lightgray;
+}
+
+/* Style for order page link */
+.MakeAnOrder {
+    text-decoration: none;
+    background-color: lightblue;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+/* Style for '/home' page */
+.homePage {
+    display: grid; /* Applies grid layout to the home page container */
+    place-items: center;
+}
+
+/* Style for cover image */
+.homePage img {
+    height: 270px;
+    width: 270px;
+}
+
+/* Style for headlines */
+.headline {
+    font-family: 'MV Boli';
+}
+
+/* Style for description paragraph */
+.paragraph {
+    font-family: 'MV Boli';
+    font-size: 1.2rem;
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px 200px;
+}
+
+/* Style for products grid */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Defines a 3-column grid */
+    padding: 20px;
+    gap: 60px;
+    margin-bottom: 50px;
+}
+
+/* Style for each product in the grid */
+.product {
+    text-align: center;
+    align-items: center;
+    border: 2px solid lightgray;
+    border-radius: 6px;
+}
+
+.product img {
+    height: 400px;
+    width: 100%;
+    max-width: 350px;
+}
+
+.product p {
+    font-style: italic;
+    font-size: 1rem;
+    margin: 10px;
+}
+
+.product button {
+    margin: 10px;
+    background-color: lightblue; 
+    color: white; 
+    padding: 10px 20px; 
+    border: none; 
+    border-radius: 5px; 
+    font-size: 16px; 
+    font-weight: bold; 
+    cursor: pointer;
+}
+
+/* Style for '/orderPage' page */
+.order_page {
+    padding: 15px 170px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+/* Style for registration form */
+.registration-form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
+
+.registration-form {
+    text-align: center;
+    background-color: white;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    padding: 20px;
+    max-width: 500px; 
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.registration-form input,
+select {
+    width: 100%;
+    max-width: 450px;
+    padding: 10px;
+    border: 1px solid lightgray;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+
+.registration-form button {
+    background-color: lightblue;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    max-width: 450px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+
+/* Style for the success message*/
+.successMessage {
+    font-family: 'MV Boli';
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: 80px;
+}
+
+
+/* Media Queries */
+/* Style for screens with a max width of 1024px (for example laptop) */
+@media (max-width: 1024px) {
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr); /* Set grid to 2 columns */
+    }
+    .paragraph {
+        padding: 10px 150px;
+    }
+}
+
+/* Style for screens with a max width of 768px (for example tablet) */
+@media (max-width: 768px) {
+    .cart-dropdown {
+        width: 100%; 
+        max-width: 280px;
+    }
+    .paragraph {
+        padding: 10px 100px;
+    }
+    .product-grid {
+        grid-template-columns: 1fr;
+        padding: 10px;
+    }
+
+    .product img {
+        height: auto;
+        width: 100%;
+    }
+
+    .navbar_left img {
+        height: 50px;
+        width: 50px;
+    }
+
+    .shippingCart {
+        width: 25px;
+        height: 25px;
+    }
+    .order_page {
+        padding: 15px 10px; 
+    }
+
+    .list-style {
+        display: flex;
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    .list-style img {
+        width: 80px; 
+        height: auto;
+        margin-bottom: 10px;
+    }
+
+    .counter {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+    }
+    .counter div {
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+
+/* Style for screens with a max width of 430px (for example mobile phone) */
+@media (max-width: 430px) {
+    .paragraph {
+        padding: 10px 30px;
+    }
+    .homeLink {
+        font-size: 1.2rem;
+    }
+
+    .MakeAnOrder {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+
+    .navbar_left {
+        gap: 15px;
+    }
+}

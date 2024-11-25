@@ -1,8 +1,5 @@
 /*
     Server side JS file
-    Submitted by:
-    Ambartzumov Nadezda 207267113
-    Ohana Ron 206815557
 */
 
 // Import necessary modules and packages

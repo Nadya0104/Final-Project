@@ -1,8 +1,5 @@
 /*
     OrderPage component
-    Submitted by:
-    Ambartzumov Nadezda 207267113
-    Ohana Ron 206815557
 */
 
 import RegistrationForm from "./RegistrationForm";
